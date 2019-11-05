@@ -1,30 +1,20 @@
-# Project Name
+# Photo Gallery - DropGrav
 
-> Project description
-
-## Related Projects
-
-  - https://github.com/haab-solutions/reservation-module
-  - https://github.com/haab-solutions/photo-gallery-module
-  - https://github.com/haab-solutions/reviews-module
-  - https://github.com/haab-solutions/recommendations-module
+Photo gallery microservice demonstration and backend design for a lodging and hotel web page. Built with React, Express, and PostgreSQL. Supports interactive hero banner and gallery.
 
 ## Table of Contents
 
 1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+2. [Requirements](#requirements)
+3. [Development](#development)
 
 ## Usage
 
-> Some usage instructions
+Hover over an image on the hero banner to zoom in on that photo. Click on the View Photos button to launch the gallery, which begins on the the first image of the hero banner. Click on any image in the hero banner to launch the gallery and start at the selected image. In the gallery, click > to move to the next image or < to move to the previous image.
 
 ## Requirements
 
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
-- etc
+- Node 6.13.0 or higher
 
 ## Development
 
@@ -33,14 +23,8 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 From within the root directory:
 
 ```sh
-npm install -g webpack
 npm install
+npm run seed
+npm run build
+npm run start (in a seperate terminal window)
 ```
-## RESTful CRUD API Routes
-- Create / POST - create a new item: /api/listing/:listingID
-
-- Read / GET - read an item:         /api/listing/:listingID
-
-- Update / PUT - update an item:     /api/listing/:listingID/photos/:photoID
-
-- Delete / DELETE - delete an item:  /api/listing/:listingID/photos/:photoID
