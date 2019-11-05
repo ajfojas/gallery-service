@@ -8,14 +8,14 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "react-pro": "webpack -d -p --mode=production",
-    "react-dev": "webpack -d -p --watch --mode=development",
-    "server-pro": "node ./server/index.js",
-    "server-dev": "nodemon ./server/index.js",
+    "build-pro": "webpack -d -p --mode=production",
+    "build": "webpack -d -p --watch --mode=development",
+    "start-pro": "node ./server/index.js",
+    "start": "nodemon ./server/index.js",
     "write-csv-psql": "node --max-old-space-size=8192 ./server/db/write-csv-psql.js",
     "write-csv-cql": "node --max-old-space-size=8192 ./server/db/write-csv-cql.js",
-    "seed-db-psql": "psql -d postgres -a -f pschema.sql",
-    "seed-db-cql": "cqlsh -f cschema.cql",
+    "seed": "psql -d postgres -a -f pschema.sql",
+    "seed-cql": "cqlsh -f cschema.cql",
     "artillery": "artillery run hello.yml",
     "test": "jest --Coverage --cache",
     "lint": "./node_modules/.bin/eslint ./client"
